@@ -1,3 +1,5 @@
+import { BookdeteilPage } from './../bookdeteil/bookdeteil';
+
 import { Book } from './../../models/book.model';
 import { BookRestProvider } from './../../providers/book-rest/book-rest';
 import { Component } from '@angular/core';
@@ -26,5 +28,12 @@ export class BookListPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad BookListPage');
   }
-
+  gotoBack(){
+    this.navCtrl.pop();
+  }
+  showDetail(bookid:number){
+    this.navCtrl.push(BookdeteilPage,
+      {bookid:bookid}
+    );
+  }
 }

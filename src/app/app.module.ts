@@ -1,3 +1,4 @@
+import { BookdeteilPage } from './../pages/bookdeteil/bookdeteil';
 import { HttpClientModule } from '@angular/common/http';
 import { BookListPage } from './../pages/book-list/book-list';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,7 +15,8 @@ import { BookRestProvider } from '../providers/book-rest/book-rest';
   declarations: [
     MyApp,
     HomePage,
-    BookListPage
+    BookListPage,
+    BookdeteilPage
   ],
   imports: [
     HttpClientModule,
@@ -25,7 +27,8 @@ import { BookRestProvider } from '../providers/book-rest/book-rest';
   entryComponents: [
     MyApp,
     HomePage,
-    BookListPage
+    BookListPage,
+    BookdeteilPage
   ],
   providers: [
     StatusBar,
