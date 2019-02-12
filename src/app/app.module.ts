@@ -1,3 +1,4 @@
+import { BookEditPage } from './../pages/book-edit/book-edit';
 import { BookdeteilPage } from './../pages/bookdeteil/bookdeteil';
 import { HttpClientModule } from '@angular/common/http';
 import { BookListPage } from './../pages/book-list/book-list';
@@ -6,7 +7,6 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { BookRestProvider } from '../providers/book-rest/book-rest';
@@ -16,7 +16,8 @@ import { BookRestProvider } from '../providers/book-rest/book-rest';
     MyApp,
     HomePage,
     BookListPage,
-    BookdeteilPage
+    BookdeteilPage,
+    BookEditPage
   ],
   imports: [
     HttpClientModule,
@@ -28,7 +29,8 @@ import { BookRestProvider } from '../providers/book-rest/book-rest';
     MyApp,
     HomePage,
     BookListPage,
-    BookdeteilPage
+    BookdeteilPage,
+    BookEditPage
   ],
   providers: [
     StatusBar,

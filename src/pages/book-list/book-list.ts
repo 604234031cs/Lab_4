@@ -1,3 +1,4 @@
+import { BookEditPage } from './../book-edit/book-edit';
 import { BookdeteilPage } from './../bookdeteil/bookdeteil';
 
 import { Book } from './../../models/book.model';
@@ -31,9 +32,15 @@ export class BookListPage {
   gotoBack(){
     this.navCtrl.pop();
   }
-  showDetail(bookid:number){
+  ShowDetail(bookid:number){
     this.navCtrl.push(BookdeteilPage,
       {bookid:bookid}
     );
   }
+  BookEdit(bookId:number) {
+    this.navCtrl.push(BookEditPage,
+      {bookid:bookId}
+      );
+  }
+
 }
